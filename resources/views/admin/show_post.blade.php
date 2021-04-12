@@ -16,7 +16,7 @@
 					@endphp
 					<table class="table">
 						<thead>
-							<tr class="text-center">
+							<tr class="text-center text-nowrap">
 								<th scope="col">Stt</th>
 								<th scope="col">Title</th>
 								<th scope="col">Ảnh</th>
@@ -34,7 +34,7 @@
 								<td><img src="{{ asset('public/upload/post/'.$value->image) }}" alt="" class="w-50"></td>
 								<td>{{ $value->short_desc }}</td>
 								@if ($value->category)
-								<td>{{ $value->category->title }}</td>
+								<td>{!! $value->category->title !!}</td>
 								@else
                                  <td></td>
 								@endif

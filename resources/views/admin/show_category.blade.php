@@ -27,7 +27,7 @@
 							@foreach ($category as $value)
 							<tr class="text-center">
 								<th scope="row">{{ $stt++ }}</th>
-								<td>{{ $value->title }}</td>
+								<td>{!! $value->title !!}</td>
 								@if ($value->category_desc)
 									<td>{!!substr($value->category_desc,0,100)!!}</td>
 							    @else
